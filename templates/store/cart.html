@@ -25,7 +25,7 @@
 		<figure class="itemside align-items-center">
 			<div class="aside"><img src="{{cart_item.product.Image.url}}" class="img-sm"></div>
 			<figcaption class="info">
-				<a href="#" class="title text-dark">{{ cart_item.product.product_name }}</a>
+				<a href="{{cart_item.product.get_url}}" class="title text-dark">{{ cart_item.product.product_name }}</a>
 				<p class="text-muted small">{{ card_item.product.description }} <br> Brand: {{ card_item.product.category}}</p>
 			</figcaption>
 		</figure>
